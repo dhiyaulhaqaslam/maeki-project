@@ -1,0 +1,134 @@
+import { Home, Map, Newspaper, Calendar } from "lucide-react";
+import { NavLink } from "react-router-dom";
+
+export default function BottomNav() {
+    const base =
+        "flex flex-col items-center transition-all font-medium select-none";
+
+    return (
+        <div
+            className="
+        fixed bottom-0 md:bottom-[clamp(6px,1.4vw,20px)] left-1/2 -translate-x-1/2 z-50
+        flex
+        gap-[clamp(30px,2.5vw,28px)]
+        md:bg-transparent bg-white w-full justify-center py-2
+      "
+        >
+            {/* HOME */}
+            <NavLink
+                to="/"
+                className={({ isActive }) =>
+                    `${base} ${isActive ? "text-[#F7EEDF]" : "text-white/70 hover:text-[#F7EEDF"}`
+                }
+            >
+                {({ isActive }) => (
+                    <>
+                        <div
+                            className={`
+                                rounded-full transition-all flex items-center justify-center
+                                p-[clamp(6px,1.4vw,14px)]
+                                min-w-[50px] min-h-[50px]
+                                ${isActive
+                                    ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                    : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                }
+                            `}
+                        >
+                            <Home className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
+                        </div>
+                        <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A]">
+                            Home
+                        </span>
+                    </>
+                )}
+            </NavLink>
+
+            {/* GIS */}
+            <NavLink
+                to="/gis"
+                className={({ isActive }) =>
+                    `${base} ${isActive ? "text-[#F7EEDF]" : "text-white/70 hover:text-[#F7EEDF"}`
+                }
+            >
+                {({ isActive }) => (
+                    <>
+                        <div
+                            className={`
+                                rounded-full transition-all flex items-center justify-center
+                                p-[clamp(6px,1.4vw,14px)]
+                                min-w-[50px] min-h-[50px]
+                                ${isActive
+                                    ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                    : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                }
+                            `}
+                        >
+                            <Map className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
+                        </div>
+                        <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A]">
+                            GIS
+                        </span>
+                    </>
+                )}
+            </NavLink>
+
+            {/* NEWS */}
+            <NavLink
+                to="/news"
+                className={({ isActive }) =>
+                    `${base} ${isActive ? "text-[#F7EEDF]" : "text-white/70 hover:text-[#F7EEDF"}`
+                }
+            >
+                {({ isActive }) => (
+                    <>
+                        <div
+                            className={`
+                                rounded-full transition-all flex items-center justify-center
+                                p-[clamp(6px,1.4vw,14px)]
+                                min-w-[50px] min-h-[50px]
+                                ${isActive
+                                    ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                    : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                }
+                            `}
+                        >
+                            <Newspaper className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
+                        </div>
+                        <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A]">
+                            News
+                        </span>
+                    </>
+                )}
+            </NavLink>
+
+            {/* EVENT */}
+            <NavLink
+                to="/event"
+                className={({ isActive }) =>
+                    `${base} ${isActive ? "text-[#F7EEDF]" : "text-white/70 hover:text-[#F7EEDF"}`
+                }
+            >
+                {({ isActive }) => (
+                    <>
+                        <div
+                            className={`
+                                rounded-full transition-all flex items-center justify-center
+                                p-[clamp(6px,1.4vw,14px)]
+                                min-w-[50px] min-h-[50px]
+                                ${isActive
+                                    ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                    : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                }
+                            `}
+                        >
+                            <Calendar className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
+                        </div>
+                        <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A]">
+                            Event
+                        </span>
+                    </>
+                )}
+            </NavLink>
+        </div>
+    );
+}

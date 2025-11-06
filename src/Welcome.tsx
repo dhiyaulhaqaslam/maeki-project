@@ -1,0 +1,71 @@
+// src/Welcome.tsx
+import { useEffect, useRef } from "react";
+import awan1 from "./assets/awan1.png";
+import awan2 from "./assets/awan2.png";
+import awan3 from "./assets/awan3.png";
+import awan4 from "./assets/awan4.png";
+import awan5 from "./assets/awan5.png";
+import awan6 from "./assets/awan6.png";
+import wayang from "./assets/wayang.png";
+import wayangA from "./assets/wayangA.png";
+import CultureCarousel from "./components/ui/CultureCarousel";
+
+export default function Welcome() {
+   const kapalRef = useRef<HTMLImageElement | null>(null);
+   const awanRefs = useRef<(HTMLImageElement | null)[]>([]);
+
+   const awanList = [
+      { src: wayang, style: "bottom-40 -right-50 w-[1000px]", speed: 0.5, direction: 1 },
+      { src: wayangA, style: "bottom-40 right-0 w-[300px] z-0", speed: 0.5, direction: 1 },
+      { src: awan1, style: "bottom-0 -left-20 w-[300px] z-10", speed: 0.2, direction: -2 },
+      { src: awan2, style: "bottom-10 left-10 w-[400px] z-5", speed: 0.25, direction: -2 },
+      { src: awan3, style: "bottom-20 -left-40 w-[600px]", speed: 0.3, direction: -2 },
+      { src: awan4, style: "bottom-0 -right-20 w-[300px] z-10", speed: 0.35, direction: 2 },
+      { src: awan5, style: "bottom-10 right-10 w-[400px] z-5", speed: 0.4, direction: 2 },
+      { src: awan6, style: "bottom-20 -right-40 w-[600px]", speed: 0.45, direction: 2 },
+   ];
+
+   useEffect(() => {
+      const handleScroll = () => {
+         const scrollY = window.scrollY;
+         if (kapalRef.current)
+            kapalRef.current.style.transform = `translateY(${scrollY * 0.3}px)`;
+
+         awanRefs.current.forEach((el, i) => {
+            if (!el) return;
+            const { speed, direction } = awanList[i];
+            el.style.transform = `translateX(${scrollY * speed * direction}px) translateY(${scrollY * speed}px)`;
+         });
+      };
+
+      window.addEventListener("scroll", handleScroll, { passive: true });
+      return () => window.removeEventListener("scroll", handleScroll);
+   }, []);
+
+   const Hero = () => (
+      <section className="relative h-screen overflow-hidden bg-[var(--background)] text-[var(--foreground)] transition-colors duration-500">
+         {/* Background Carousel */}
+         <CultureCarousel />
+
+         {/* Overlay transparan agar kontras */}
+         <div className="absolute inset-0 bg-linear-to-t from-[var(--background)]/90 to-transparent dark:from-black/70 z-0" />
+
+         {/* Awan & wayang animasi */}
+         {/* {awanList.map((awan, i) => (
+            <img
+               key={i}
+               ref={(el) => (awanRefs.current[i] = el)}
+               src={awan.src}
+               alt=""
+               className={`absolute ${awan.style} transition-transform duration-300 ease-out pointer-events-none select-none`}
+            />
+         ))} */}
+      </section>
+   );
+
+   return (
+      <>
+         <Hero />
+      </>
+   );
+}
