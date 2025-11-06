@@ -53,48 +53,7 @@ export default function Navbar() {
         >
           {themeIcon}
         </button>
-
-        {/* Tombol Login & Register */}
-        <div className="hidden md:flex items-center gap-4">
-          <Link
-            to="/login"
-            className="px-4 py-1.5 rounded-lg border border-[#9C1D2A] text-white bg-[#9C1D2A] hover:bg-[#9C1D2A]/80 transition font-medium"
-          >
-            Login
-          </Link>
-          <Link
-            to="/register"
-            className="px-4 py-1.5 rounded-lg text-[#9C1D2A] hover:bg-[#9C1D2A] border border-[#9C1D2A] hover:text-white transition font-semibold"
-          >
-            Register
-          </Link>
-        </div>
       </div>
-
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          className={`md:hidden flex flex-col items-center text-white py-6 space-y-4 shadow-lg ${scrolled ? "bg-transparent" : "backdrop-blur-md bg-black/30 shadow-lg"}`}
-        >
-          <Link
-            to="/login"
-            onClick={() => setMenuOpen(false)}
-            className="block w-3/4 text-center py-2 rounded-md bg-[#9C1D2A] text-white font-medium hover:bg-[#9C1D2A]/80 transition"
-          >
-            Login
-          </Link>
-          <Link
-            to="/register"
-            onClick={() => setMenuOpen(false)}
-            className="block w-3/4 text-center py-2 rounded-md border border-[#9C1D2A] text-[#9C1D2A] font-semibold hover:bg-[#9C1D2A] hover:text-white transition"
-          >
-            Register
-          </Link>
-        </motion.div>
-      )}
     </motion.nav>
   );
 }

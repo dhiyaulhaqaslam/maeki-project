@@ -36,13 +36,13 @@ export default function BottomNav() {
                 min-w-[50px] min-h-[50px]
                 ${isActive
                                     ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
-                                    : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                    : "bg-black/60 dark:bg-white/60 text-white dark:text-black hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                 }
               `}
                         >
                             <Home className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
                         </div>
-                        <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A]">
+                        <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A] font-semibold">
                             Home
                         </span>
                     </>
@@ -68,13 +68,13 @@ export default function BottomNav() {
                 min-w-[50px] min-h-[50px]
                 ${isActive
                                     ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
-                                    : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                    : "bg-black/60 dark:bg-white/60 text-white dark:text-black hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                 }
               `}
                         >
                             <Map className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
                         </div>
-                        <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A]">
+                        <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A] font-semibold">
                             GIS
                         </span>
                     </>
@@ -100,13 +100,13 @@ export default function BottomNav() {
                 min-w-[50px] min-h-[50px]
                 ${isActive
                                     ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
-                                    : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                    : "bg-black/60 dark:bg-white/60 text-white dark:text-black hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                 }
               `}
                         >
                             <Newspaper className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
                         </div>
-                        <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A]">
+                        <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A] font-semibold">
                             News
                         </span>
                     </>
@@ -132,13 +132,13 @@ export default function BottomNav() {
                 min-w-[50px] min-h-[50px]
                 ${isActive
                                     ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
-                                    : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                    : "bg-black/60 dark:bg-white/60 text-white dark:text-black hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                 }
               `}
                         >
                             <Calendar className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
                         </div>
-                        <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A]">
+                        <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A] font-semibold">
                             Event
                         </span>
                     </>
@@ -158,13 +158,13 @@ export default function BottomNav() {
               min-w-[50px] min-h-[50px]
               ${menuOpen
                                 ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
-                                : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                : "bg-black/60 dark:bg-white/60 text-white dark:text-black hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                             }
             `}
                     >
                         <Menu className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
                     </div>
-                    <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A]">
+                    <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A] font-semibold">
                         User
                     </span>
                 </button>
