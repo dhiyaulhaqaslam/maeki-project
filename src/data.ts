@@ -2001,28 +2001,8 @@ export const makassar = [
 import event1 from "./assets/bg/event1.png";
 
 export const events = [
-  {
+   {
     id: 1,
-    title: "Festival Budaya Nusantara",
-    description:
-      "Perayaan tahunan yang menampilkan kekayaan seni, musik, dan tarian tradisional dari berbagai daerah Indonesia.",
-    date: "12 November 2025",
-    time: "09:00 - 17:00 WIB",
-    location: "Lapangan Merdeka, Makassar",
-    image: event1,
-  },
-  {
-    id: 2,
-    title: "Pameran Batik dan Tenun Klasik",
-    description:
-      "Eksplorasi motif batik dan tenun khas Nusantara dengan sentuhan modern dan nilai filosofi budaya.",
-    date: "18 November 2025",
-    time: "10:00 - 20:00 WIB",
-    location: "Gedung Kesenian, Jakarta",
-    image: event1,
-  },
-  {
-    id: 3,
     title: "Workshop Kuliner Tradisional",
     description:
       "Belajar membuat masakan khas daerah bersama chef lokal yang menjaga cita rasa asli Indonesia.",
@@ -2032,18 +2012,36 @@ export const events = [
     image: event1,
   },
   {
-    id: 4,
-    title: "Konser Musik Etnik Modern",
+    id: 2,
+    title: "Pengalaman Unik Menikmati Seni Media Lewat FKSM",
     description:
-      "Perpaduan alat musik tradisional dan modern dalam konser yang mengangkat tema keanekaragaman budaya.",
-    date: "28 November 2025",
+      "Festival Komunitas Seni Media (FKSM) menawarkan pengalaman unik dalam menikmati seni melalui beragam karya inovatif dari sejumlah seniman muda. Pada kali ini, FKSM menyelenggarakan pameran dan pertunjukan seni yang menggabungkan teknologi digital, seni visual, dan multimedia untuk menciptakan pengalaman sensorik yang mendalam. Kegiatan ini berlangsung di Benteng Rotterdam, Makassar, mulai 3 hingga 9 November.",
+    date: "18 November 2025",
+    time: "10:00 - 20:00 WIB",
+    location: "Gedung Kesenian, Jakarta",
+    image: 'https://harian.fajar.co.id/wp-content/uploads/2024/11/IMG_20241109_161319-scaled.jpg',
+  },
+  {
+    id: 3,
+    title: "Konferensi Internasional Gau maraja Leang-Leang Maros 2025",
+    description:
+      "Maros memiliki warisan prasejarah terbaik di dunia, ditandai dengan keberadaan situs arkeologi yang beragam, gugusan karst yang luas, gua hunian manusia purba ratusan jumlahnya, dan berbagai jenis tinggalan artefak. Warisan prasejarah Maros juga memiliki keunggulan antara lain, gambar cadas tertua di dunia (51.200 tyl), liontin purba dari tulang jari kuskus (22.000 tyl), portable art, rangka manusia ‘Besse’ ber-DNA Denisovan bertarikh 7200 tyl. Potensi karst dan gua-gua prasejarah Maros tersebut kemudian menjadi dasar bagi UNESCO dalam menetapkannya sebagai “Prehistoric Cave Area” sejak 2009 dan “Global Geopark” sejak 2023.",
+    date: "04 Juli 2025",
+    time: "09:00 - 17:00 WIB",
+    location: "Lapangan Merdeka, Makassar",
+    image: 'https://gaumaraja.online/aset/img/banner_new.jpg',
+  },
+  {
+    id: 4,
+    title: "Mempo-mempo ri Bili-bili, Pertunjukan Seni Tari dan Musik Sanggar Samboritta Art",
+    description:
+      "“Akkarena-karena ri singara’ bulang” Lirik lagu pembuka yang dibawakan oleh band Pelakor (Pelantun Keroncong) sangat mewakili atmosfer malam itu. Entah sebuah kebetulan atau sudah takdirnya pementasan teman-teman Sanggar Samboritta Art bermandi cahaya sinar bulan purnama, orang Makassar menyebutnya dengan Singara’ bulang.",
+    date: "01 Maret 2024",
     time: "19:00 - 22:00 WIB",
-    location: "Taman Budaya, Yogyakarta",
-    image: event1,
+    location: "Desa Bili Bili, Kabupaten Gowa",
+    image: 'https://harian.fajar.co.id/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-01-at-11.12.46.jpeg',
   },
 ];
-
-
 
 export const newsData = [
     {
