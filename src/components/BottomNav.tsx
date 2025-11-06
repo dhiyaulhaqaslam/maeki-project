@@ -152,7 +152,7 @@ export default function BottomNav() {
             <div className="relative">
                 <button
                     onClick={() => setMenuOpen(!menuOpen)}
-                    className={`${base} text-white/70 hover:text-[#F7EEDF]`}
+                    className={`${base} text-white/70 hover:text-[#F7EEDF] cursor-pointer`}
                 >
                     <div
                         className={`

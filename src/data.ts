@@ -2043,45 +2043,47 @@ export const events = [
   },
 ];
 
+
+
 export const newsData = [
     {
       id: 1,
-      title: "Tradisi Maulid di Sulawesi",
-      author: "Ilham Furqan",
+      title: "Kompetisi Budaya GO!, Titik Temu Budaya dan Teknologi untuk Pemajuan Kebudayaan",
+      author: "Whisnu Mardiansyah",
       views: 245,
       description:
-        "Perayaan Maulid Nabi di Sulawesi dikenal dengan tradisi unik seperti makan bersama dan parade hias telur.",
+        "Jakarta: Kementerian Kebudayaan Republik Indonesia meluncurkan BUDAYA GO! Kompetisi Inovasi Digital Budaya Indonesia. Program ini menghubungkan dunia kebudayaan dengan teknologi digital untuk memajukan kebudayaan di era transformasi teknologi.Acara peluncuran digelar di Plaza Insan Berprestasi, Gedung A, Kementerian Kebudayaan RI, Senayan, Jakarta. Kegiatan ini dihadiri pejabat kementerian, komunitas budaya, akademisi, pengembang teknologi, dan perwakilan mahasiswa dari berbagai daerah.",
       image:
-        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+        "https://cdn01.metrotvnews.com/dynamic/content/2025/10/24/kpLCaP4Q/a_68fb8feeaa96c.jpg?w=720",
     },
     {
       id: 2,
-      title: "Kain Tenun Toraja Mendunia",
-      author: "Siti Rahma",
+      title: "Menbud Fadli Zon Luncurkan Single Kolaborasi Musik Kolintang & Balafon",
+      author: "Dea Duta Aulia",
       views: 180,
       description:
-        "Kain tenun khas Toraja kini mulai diminati pasar internasional karena motifnya yang kaya makna budaya.",
+        "Menteri Kebudayaan Republik Indonesia Fadli Zon hadir dalam peluncuran single kolaboratif musik kolintang dan balafon yang menampilkan dua lagu berjudul 'Oh Minahasa' dan 'Haiti' di Artotel Senayan, Jakarta. Kedua lagu tersebut merupakan hasil kolaborasi Persatuan Insan Kolintang Nasional Indonesia (PINKAN) bersama musisi Tanah Air Ita Purnamasari dalam lagu 'Oh Minahasa' serta Neo Akbar pemain balafon dalam lagu 'Haiti'. Fadli Zon menyebut kedua lagu ini bukan sekadar persembahan musikal, melainkan sebuah inisiatif luar biasa yang menjembatani tradisi, identitas, dan kolaborasi lintas budaya.",
       image:
-        "https://images.unsplash.com/photo-1602526218679-3b19b6b8b80b?auto=format&fit=crop&w=1200&q=80",
+        "https://akcdn.detik.net.id/community/media/visual/2025/10/27/kementerian-kebudayaan-1761534005671_169.jpeg?w=700&q=90",
     },
     {
       id: 3,
-      title: "Seni Ukir Jepara Kembali Diminati",
-      author: "Ahmad Fauzi",
+      title: "Buka Festival Gau' Maraja, Menbud Bicara Budaya-Jejak Peradaban Maros",
+      author: "Inkana Putri",
       views: 392,
       description:
-        "Kerajinan ukir kayu Jepara kini mengalami kebangkitan seiring meningkatnya minat terhadap produk lokal.",
+        "Menteri Kebudayaan RI, Fadli Zon membuka Festival Gau' Maraja Leang-Leang 2025 di Lapangan Pallantikang, Kabupaten Maros. Sulawesi Selatan. Perhelatan festival ini bertepatan dengan Hari Jadi ke-66 Kabupaten Maros. Dalam sambutannya, Fadli merupakan Maros menjadi salah satu situs peradaban tertua di dunia dan simbol kekayaan megadiversity Indonesia. Menurutnya, Festival Gau' Maraja menjadi momentum penting untuk memperkenalkan warisan budaya dan situs arkeologis Indonesia kepada dunia.",
       image:
-        "https://images.unsplash.com/photo-1578301978018-3005759f48d4?auto=format&fit=crop&w=1200&q=80",
+        "https://akcdn.detik.net.id/community/media/visual/2025/07/04/kemenbud-1751608589809_169.jpeg?w=700&q=90",
     },
     {
       id: 4,
-      title: "Wayang Kulit Modern",
-      author: "Dewi Kartika",
+      title: "Wayang Kulit Modern: Inovasi dan Tradisi",
+      author: "Hi Nusantara",
       views: 312,
       description:
-        "Para seniman kini memadukan teknologi digital dengan wayang kulit, menciptakan pertunjukan yang menarik generasi muda.",
+        "Wayang kulit adalah seni pertunjukan tradisional Indonesia yang telah menjadi bagian dari identitas budaya Nusantara selama berabad-abad. Namun, di tengah perubahan zaman dan kemajuan teknologi, wayang kulit juga mengalami inovasi tanpa meninggalkan nilai tradisinya. Wayang kulit modern kini muncul sebagai kombinasi harmonis antara warisan budaya dan kreativitas kontemporer.",
       image:
-        "https://images.unsplash.com/photo-1597055181241-fb7d2b27c2b8?auto=format&fit=crop&w=1200&q=80",
+        "https://hinusantara.com/wp-content/uploads/2024/11/Wayang-Kulit-Modern-768x768.jpg",
     },
   ];
