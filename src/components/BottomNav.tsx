@@ -1,7 +1,10 @@
-import { Home, Map, Newspaper, Calendar } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { Home, Map, Newspaper, Calendar, Menu } from "lucide-react";
+import { NavLink, Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function BottomNav() {
+    const [menuOpen, setMenuOpen] = useState(false);
     const base =
         "flex flex-col items-center transition-all font-medium select-none";
 
@@ -11,28 +14,31 @@ export default function BottomNav() {
         fixed bottom-0 md:bottom-[clamp(6px,1.4vw,20px)] left-1/2 -translate-x-1/2 z-50
         flex
         gap-[clamp(30px,2.5vw,28px)]
-        md:bg-transparent bg-white w-full justify-center py-2
+        md:bg-transparent bg-black/40 w-full justify-center py-2
       "
         >
             {/* HOME */}
             <NavLink
                 to="/"
                 className={({ isActive }) =>
-                    `${base} ${isActive ? "text-[#F7EEDF]" : "text-white/70 hover:text-[#F7EEDF"}`
+                    `${base} ${isActive
+                        ? "text-[#F7EEDF]"
+                        : "text-white/70 hover:text-[#F7EEDF]"
+                    }`
                 }
             >
                 {({ isActive }) => (
                     <>
                         <div
                             className={`
-                                rounded-full transition-all flex items-center justify-center
-                                p-[clamp(6px,1.4vw,14px)]
-                                min-w-[50px] min-h-[50px]
-                                ${isActive
+                rounded-full transition-all flex items-center justify-center
+                p-[clamp(6px,1.4vw,14px)]
+                min-w-[50px] min-h-[50px]
+                ${isActive
                                     ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                     : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                 }
-                            `}
+              `}
                         >
                             <Home className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
                         </div>
@@ -47,21 +53,24 @@ export default function BottomNav() {
             <NavLink
                 to="/gis"
                 className={({ isActive }) =>
-                    `${base} ${isActive ? "text-[#F7EEDF]" : "text-white/70 hover:text-[#F7EEDF"}`
+                    `${base} ${isActive
+                        ? "text-[#F7EEDF]"
+                        : "text-white/70 hover:text-[#F7EEDF]"
+                    }`
                 }
             >
                 {({ isActive }) => (
                     <>
                         <div
                             className={`
-                                rounded-full transition-all flex items-center justify-center
-                                p-[clamp(6px,1.4vw,14px)]
-                                min-w-[50px] min-h-[50px]
-                                ${isActive
+                rounded-full transition-all flex items-center justify-center
+                p-[clamp(6px,1.4vw,14px)]
+                min-w-[50px] min-h-[50px]
+                ${isActive
                                     ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                     : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                 }
-                            `}
+              `}
                         >
                             <Map className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
                         </div>
@@ -76,21 +85,24 @@ export default function BottomNav() {
             <NavLink
                 to="/news"
                 className={({ isActive }) =>
-                    `${base} ${isActive ? "text-[#F7EEDF]" : "text-white/70 hover:text-[#F7EEDF"}`
+                    `${base} ${isActive
+                        ? "text-[#F7EEDF]"
+                        : "text-white/70 hover:text-[#F7EEDF]"
+                    }`
                 }
             >
                 {({ isActive }) => (
                     <>
                         <div
                             className={`
-                                rounded-full transition-all flex items-center justify-center
-                                p-[clamp(6px,1.4vw,14px)]
-                                min-w-[50px] min-h-[50px]
-                                ${isActive
+                rounded-full transition-all flex items-center justify-center
+                p-[clamp(6px,1.4vw,14px)]
+                min-w-[50px] min-h-[50px]
+                ${isActive
                                     ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                     : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                 }
-                            `}
+              `}
                         >
                             <Newspaper className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
                         </div>
@@ -105,21 +117,24 @@ export default function BottomNav() {
             <NavLink
                 to="/event"
                 className={({ isActive }) =>
-                    `${base} ${isActive ? "text-[#F7EEDF]" : "text-white/70 hover:text-[#F7EEDF"}`
+                    `${base} ${isActive
+                        ? "text-[#F7EEDF]"
+                        : "text-white/70 hover:text-[#F7EEDF]"
+                    }`
                 }
             >
                 {({ isActive }) => (
                     <>
                         <div
                             className={`
-                                rounded-full transition-all flex items-center justify-center
-                                p-[clamp(6px,1.4vw,14px)]
-                                min-w-[50px] min-h-[50px]
-                                ${isActive
+                rounded-full transition-all flex items-center justify-center
+                p-[clamp(6px,1.4vw,14px)]
+                min-w-[50px] min-h-[50px]
+                ${isActive
                                     ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                     : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                 }
-                            `}
+              `}
                         >
                             <Calendar className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
                         </div>
@@ -129,6 +144,63 @@ export default function BottomNav() {
                     </>
                 )}
             </NavLink>
+
+            {/* DROPDOWN (ganti Event2) */}
+            <div className="relative">
+                <button
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    className={`${base} text-white/70 hover:text-[#F7EEDF]`}
+                >
+                    <div
+                        className={`
+              rounded-full transition-all flex items-center justify-center
+              p-[clamp(6px,1.4vw,14px)]
+              min-w-[50px] min-h-[50px]
+              ${menuOpen
+                                ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                                : "bg-black/25 hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+                            }
+            `}
+                    >
+                        <Menu className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
+                    </div>
+                    <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A]">
+                        Menu
+                    </span>
+                </button>
+
+                <AnimatePresence>
+                    {menuOpen && (
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 20 }}
+                            transition={{ duration: 0.2 }}
+                            className="
+                absolute bottom-[70px] left-1/2 -translate-x-1/2 
+                bg-black/70 backdrop-blur-md rounded-xl px-6 py-4
+                flex flex-col gap-3 text-center w-[200px]
+                shadow-[0_0_10px_rgba(255,255,255,0.2)]
+              "
+                        >
+                            <Link
+                                to="/login"
+                                onClick={() => setMenuOpen(false)}
+                                className="text-white hover:text-[#F7EEDF] transition font-medium"
+                            >
+                                Login
+                            </Link>
+                            <Link
+                                to="/register"
+                                onClick={() => setMenuOpen(false)}
+                                className="text-white hover:text-[#F7EEDF] transition font-medium"
+                            >
+                                Register
+                            </Link>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </div>
         </div>
     );
 }

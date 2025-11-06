@@ -7,7 +7,7 @@ import useTheme from "../hooks/useTheme";
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation(); // ✅ untuk deteksi halaman aktif
+  const location = useLocation();
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
@@ -69,27 +69,6 @@ export default function Navbar() {
             Register
           </Link>
         </div>
-
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden focus:outline-none hover:cursor-pointer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-7 h-7"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-            />
-          </svg>
-        </button>
       </div>
 
       {/* Mobile Menu */}
@@ -100,37 +79,6 @@ export default function Navbar() {
           exit={{ opacity: 0, y: -10 }}
           className={`md:hidden flex flex-col items-center text-white py-6 space-y-4 shadow-lg ${scrolled ? "bg-transparent" : "backdrop-blur-md bg-black/30 shadow-lg"}`}
         >
-          <Link
-            to="/"
-            onClick={() => setMenuOpen(false)}
-            className={`${isActive("/")} block text-lg font-medium`}
-          >
-            Beranda
-          </Link>
-          <Link
-            to="/GIS"
-            onClick={() => setMenuOpen(false)}
-            className={`${isActive("/GIS")} block text-lg font-medium`}
-          >
-            GIS
-          </Link>
-          <Link
-            to="/news"
-            onClick={() => setMenuOpen(false)}
-            className={`${isActive("/news")} block text-lg font-medium`}
-          >
-            News
-          </Link>
-          <Link
-            to="/event"
-            onClick={() => setMenuOpen(false)}
-            className={`${isActive("/event")} block text-lg font-medium`}
-          >
-            Event
-          </Link>
-
-          <hr className="border-[#9C1D2A] w-3/4 mx-auto my-3" />
-
           <Link
             to="/login"
             onClick={() => setMenuOpen(false)}
