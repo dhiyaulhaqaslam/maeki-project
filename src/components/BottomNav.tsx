@@ -33,14 +33,15 @@ export default function BottomNav() {
                             className={`
                 rounded-full transition-all flex items-center justify-center
                 p-[clamp(6px,1.4vw,14px)]
-                min-w-[50px] min-h-[50px]
+                min-w-[40px] min-h-[40px]
+                md:min-w-[50px] md:min-h-[50px]
                 ${isActive
                                     ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                     : "bg-black/60 dark:bg-white/60 text-white dark:text-black hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                 }
               `}
                         >
-                            <Home className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
+                            <Home className="w-[20px] h-[20px] md:min-w-[30px] md:min-h-[30px] lg:min-w-[40px] lg:min-h-[40px] xl:min-w-[50px] xl:min-h-[50px]" />
                         </div>
                         <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A] font-semibold">
                             Home
@@ -65,14 +66,15 @@ export default function BottomNav() {
                             className={`
                 rounded-full transition-all flex items-center justify-center
                 p-[clamp(6px,1.4vw,14px)]
-                min-w-[50px] min-h-[50px]
+                min-w-[40px] min-h-[40px]
+                md:min-w-[50px] md:min-h-[50px]
                 ${isActive
                                     ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                     : "bg-black/60 dark:bg-white/60 text-white dark:text-black hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                 }
               `}
                         >
-                            <Map className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
+                            <Map className="w-[20px] h-[20px] md:min-w-[30px] md:min-h-[30px] lg:min-w-[40px] lg:min-h-[40px] xl:min-w-[50px] xl:min-h-[50px]" />
                         </div>
                         <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A] font-semibold">
                             GIS
@@ -97,14 +99,15 @@ export default function BottomNav() {
                             className={`
                 rounded-full transition-all flex items-center justify-center
                 p-[clamp(6px,1.4vw,14px)]
-                min-w-[50px] min-h-[50px]
+                min-w-[40px] min-h-[40px]
+                md:min-w-[50px] md:min-h-[50px]
                 ${isActive
                                     ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                     : "bg-black/60 dark:bg-white/60 text-white dark:text-black hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                 }
               `}
                         >
-                            <Newspaper className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
+                            <Newspaper className="w-[20px] h-[20px] md:min-w-[30px] md:min-h-[30px] lg:min-w-[40px] lg:min-h-[40px] xl:min-w-[50px] xl:min-h-[50px]" />
                         </div>
                         <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A] font-semibold">
                             News
@@ -129,14 +132,15 @@ export default function BottomNav() {
                             className={`
                 rounded-full transition-all flex items-center justify-center
                 p-[clamp(6px,1.4vw,14px)]
-                min-w-[50px] min-h-[50px]
+                min-w-[40px] min-h-[40px]
+                md:min-w-[50px] md:min-h-[50px]
                 ${isActive
                                     ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                     : "bg-black/60 dark:bg-white/60 text-white dark:text-black hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
                                 }
               `}
                         >
-                            <Calendar className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
+                            <Calendar className="w-[20px] h-[20px] md:min-w-[30px] md:min-h-[30px] lg:min-w-[40px] lg:min-h-[40px] xl:min-w-[50px] xl:min-h-[50px]" />
                         </div>
                         <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A] font-semibold">
                             Event
@@ -145,7 +149,6 @@ export default function BottomNav() {
                 )}
             </NavLink>
 
-            {/* DROPDOWN (ganti Event2) */}
             <div className="relative">
                 <button
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -153,16 +156,17 @@ export default function BottomNav() {
                 >
                     <div
                         className={`
-              rounded-full transition-all flex items-center justify-center
-              p-[clamp(6px,1.4vw,14px)]
-              min-w-[50px] min-h-[50px]
-              ${menuOpen
-                                ? "bg-[#9C1D2A] scale-105 shadow-[0_0_12px_rgba(255,200,0,0.45)]"
-                                : "bg-black/60 dark:bg-white/60 text-white dark:text-black hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_12px_rgba(255,200,0,0.45)]"
+        rounded-full transition-all flex items-center justify-center
+        p-[clamp(6px,1.4vw,14px)]
+        min-w-[40px] min-h-[40px]
+        md:min-w-[50px] md:min-h-[50px]
+        ${menuOpen
+                                ? "bg-[#9C1D2A] scale-105 shadow-[0_0_15px_rgba(255,215,0,0.4)]"
+                                : "bg-black/60 dark:bg-white/60 text-white dark:text-black hover:bg-[#9C1D2A] hover:scale-105 hover:shadow-[0_0_15px_rgba(255,215,0,0.35)]"
                             }
-            `}
+      `}
                     >
-                        <User className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
+                        <User className="w-[20px] h-[20px] md:min-w-[30px] md:min-h-[30px] lg:min-w-[40px] lg:min-h-[40px] xl:min-w-[50px] xl:min-h-[50px]" />
                     </div>
                     <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A] font-semibold">
                         User
@@ -175,27 +179,36 @@ export default function BottomNav() {
                             initial={{ y: 100, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             exit={{ y: 100, opacity: 0 }}
-                            transition={{ type: "spring", stiffness: 180, damping: 18 }}
+                            transition={{ type: "spring", stiffness: 160, damping: 18 }}
                             className="
-    fixed bottom-[70px] left-1/2 -translate-x-1/2
-    bg-gradient-to-t from-[#000]/80 to-[#222]/80
-    border border-white/10 rounded-3xl p-5
-    shadow-[0_0_30px_rgba(255,255,255,0.1)]
-    w-[240px] text-center backdrop-blur-lg
-  "
+          fixed bottom-[100px] left-1/2 -translate-x-1/2
+          bg-[#0f0f0f]/90 backdrop-blur-xl
+          border border-white/10 rounded-2xl px-5 py-4
+          shadow-[0_8px_25px_rgba(255,255,255,0.08)]
+          w-[220px] text-center z-40
+        "
                         >
-                            <h4 className="text-[#F7EEDF] text-lg mb-3 font-semibold">User Menu</h4>
-                            <div className="flex flex-col gap-2">
-                                <Link to="/login" className="text-white/90 hover:text-[#F7EEDF]">
+                            <h4 className="text-[#F7EEDF] text-base mb-3 font-semibold tracking-wide">
+                                User Menu
+                            </h4>
+
+                            <div className="flex flex-col gap-2 text-[15px] font-medium">
+                                <Link
+                                    to="/login"
+                                    className="px-4 py-2 rounded-lg bg-white/5 hover:bg-[#9C1D2A]/70 hover:text-[#F7EEDF] text-white/90 transition-all duration-200"
+                                    onClick={() => setMenuOpen(false)}
+                                >
                                     Login
                                 </Link>
-                                <Link to="/register" className="text-white/90 hover:text-[#F7EEDF]">
+                                <Link
+                                    to="/register"
+                                    className="px-4 py-2 rounded-lg bg-white/5 hover:bg-[#9C1D2A]/70 hover:text-[#F7EEDF] text-white/90 transition-all duration-200"
+                                    onClick={() => setMenuOpen(false)}
+                                >
                                     Register
                                 </Link>
                             </div>
                         </motion.div>
-
-
                     )}
                 </AnimatePresence>
             </div>
