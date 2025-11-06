@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 import Navbar from "../components/Navbar";
-import GlobalCursorEffect from "../components/ui/GlobalCursorEffect";
 import BottomNav from "../components/BottomNav";
 import GridBackground from "../components/ui/moving-grid"; // ✅ tambahkan import
 
