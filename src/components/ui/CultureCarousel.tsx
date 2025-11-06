@@ -93,11 +93,17 @@ export default function CultureCarousel() {
                 >
                     {/* Judul huruf demi huruf */}
                     <motion.h1
-                        className="font-bold text-5xl md:text-[60px] drop-shadow-2xl leading-tight tracking-tight"
+                        className="
+  font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[60px]
+  drop-shadow-2xl leading-tight tracking-tight
+  break-words whitespace-normal pb-2
+"
+
                         variants={containerVariants}
                         initial="hidden"
                         animate="visible"
                     >
+
                         {images[index].title.split("").map((char, i) => (
                             <motion.span
                                 key={i}
