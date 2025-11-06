@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Home, Map, Newspaper, Calendar, Menu } from "lucide-react";
+import { Home, Map, Newspaper, Calendar, User } from "lucide-react";
 import { NavLink, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -162,7 +162,7 @@ export default function BottomNav() {
                             }
             `}
                     >
-                        <Menu className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
+                        <User className="w-[24px] h-[24px] md:min-w-[36px] md:min-h-[36px] lg:min-w-[48px] lg:min-h-[48px] xl:min-w-[50px] xl:min-h-[50px]" />
                     </div>
                     <span className="mt-[2px] text-[clamp(18px,1.6vw,12px)] text-[#9C1D2A] font-semibold">
                         User
